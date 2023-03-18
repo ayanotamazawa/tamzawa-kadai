@@ -45,34 +45,27 @@ body{
 }
 header {
     display: flex;
-    width: 80%;
+    max-width: 960px;
     background-color: white;
-    align-items: center;
     margin: 100px auto;
   }
 
+
   .title{
-    padding:20px 20px;
+    padding: 50px 20px;
+    margin-right:auto;
   }
   .menu-group{
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 10px 10px;
+    margin-left: auto;
+    padding: 50px 10px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowwrap;
     color: rgb(25, 24, 24);
-  }
-
-ul{
-    padding-left:0;
-  justify-content: space-between;
   }
   
   li{
-    list-style:none;
     flex-grow: 1;
-  text-align: center;
+  text-align: right;
   padding: 0 20px;
   }
 
@@ -85,9 +78,9 @@ ul{
         display: block;
     }
 
-    .title{
-        display: block;
-
+    .inner{
+      display: block;
+      width:100%;
     }
 
     .menu-group{
@@ -98,13 +91,10 @@ ul{
         display: block;
         text-align: left;
         margin-bottom: 20px;
-    } 
-
-    li{
         border-bottom: 1px solid #000;  
         padding: 10px;
-    }
-    li + li {
+    } 
+    .menu-item + .menu-item {
         border-bottom: 1px solid #000;
         border-left:none;
       }
