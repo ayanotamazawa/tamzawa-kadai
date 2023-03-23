@@ -48,39 +48,29 @@ header {
     max-width: 960px;
     background-color: white;
     margin: 100px auto;
+    justify-content: space-between;
+    align-items: center;
   }
 
 
   .title{
     padding: 50px 20px;
-    margin-right:auto;
   }
   .menu-group{
-    margin-left: auto;
     padding: 50px 10px;
     display: flex;
     justify-content: space-between;
     color: rgb(25, 24, 24);
   }
-  
-  li{
-    flex-grow: 1;
-  text-align: right;
-  padding: 0 20px;
-  }
 
-  li + li {
+
+.menu-item + .menu-item {
     border-left: 1px solid #000;
   }
 
 @media screen and (max-width:767px) {
     header{
         display: block;
-    }
-
-    .inner{
-      display: block;
-      width:100%;
     }
 
     .menu-group{
